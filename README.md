@@ -23,7 +23,7 @@ To use PipOpt, you need two CSV datasets with specific column names and formats:
     This file contains your trade signals.
 
     ```csv
-    datetime,signal
+    timestamp,signal_type
     2025-01-01 12:00:00,BUY
     2025-01-01 12:10:00,SELL
     ```
@@ -32,7 +32,7 @@ To use PipOpt, you need two CSV datasets with specific column names and formats:
     This file holds the historical 1-minute OHLC data for the trading symbol.
 
     ```csv
-    datetime,open,high,low,close
+    time,open,high,low,close
     2025-01-01 12:00:00,2050.2,2051.1,2049.8,2050.5
     ```
 
@@ -156,6 +156,7 @@ To begin using PipOpt, you first need to prepare your data.
 
 ### 📜 License
 This project is licensed under the MIT License.
+
 
 
 
